@@ -28,20 +28,25 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -76,6 +81,34 @@ table {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+@media(max-width: 1040px) and (min-width: 770px) {
+  nav {
+    margin-right: 40px;
+  }
+
+  .logo {
+    margin-left: 40px;
+  }
+
+  .welcome p {
+    margin-top: 100px;
+    font-size: 30px;
+  }
+
+  .bigButton {
+    margin-bottom: 100px;
+  }
+
+  .line .col-6 {
+  border-right: none;
+  }
+
+  footer .rights p{
+    font-size: 11px;
+  }
+  
+}
 
 @media(max-width: 769px) {
   .col-s-1 {width: 8.33%;}
@@ -150,6 +183,7 @@ table {
   .aboutUs .left {
     text-align: center;
     padding-bottom: 30px;
+    padding-right: 50px;
   }
 
   .left p:nth-child(3){
@@ -167,6 +201,7 @@ table {
   .aboutUs .right {
     text-align: center;
     padding-bottom: 30px;
+    padding-left: 50px;
   }
 
   .aboutUs p {
@@ -211,6 +246,5 @@ table {
 
   .logos img {
     margin: 30px;
-  }
   }
 }
